@@ -3,8 +3,19 @@
     margin: 0;
     
 }
+body{
+    background-color: #1A2C38;
+    
+    
+    
+
+}
 
 #navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     height:60px;
@@ -14,6 +25,7 @@
     border-bottom: 3px solid black;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
     padding: 15px;
+    z-index: 10;
 }
 
 #logo{
@@ -32,7 +44,6 @@ input{
     padding: 5px;
 }
 a{
-/* margin-right: 15vw; */
 text-decoration: none;
 color: white;
 font-size: 20px;
@@ -42,9 +53,8 @@ font-size: 20px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    
     height:250px;
-    width: 200px;
+    min-width: 200px;
     background-color: antiquewhite;
 padding: 10px;
 margin: 10px;
@@ -52,10 +62,17 @@ font-size: 50px;
 color: darkblue;
 cursor: pointer;
 border-radius:10px ;
-
+transition: transform 100ms;
 }
-
+.a:hover{
+    
+    /* position: relative; */
+    /* top: -5px; */
+    transform: translateY(-10px);
+    /* transition-duration: 1; */
+}
 .limbo{
+    border-bottom: 5PX SOLID BLACK;
     background-color: aliceblue;
     color: #f08804;
     background-image: url(
@@ -65,6 +82,7 @@ border-radius:10px ;
 }
 
 .DRAGONTOWER{
+    border-bottom: 5PX SOLID BLACK;
     background-color: aliceblue;
     color: #f08804;
     background-image:url(
@@ -73,8 +91,8 @@ border-radius:10px ;
     );
 }
 
-.CARDS{
-    background-color: aliceblue;
+.six{
+    border-bottom: 5PX SOLID BLACK;
     color: #f08804;
     background-image: url(
         https://mediumrare.imgix.net/30be38fdc2b4d9a6c76194314dfb7814a66d6905287ade354a0e5f2a79b1ab27?&dpr=1.25&format=auto&auto=format&q=50&w=167
@@ -82,33 +100,97 @@ border-radius:10px ;
 }
 
 .mines{
+    border-bottom: 5PX SOLID BLACK;
     background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1j8QHakMksbDaTBFmh2hIMB_kh6Vx6MsYkA&s);
 }
 
 .dice{
+    border-bottom: 5PX SOLID BLACK;
     background-image: url(https://mediumrare.imgix.net/11caec5df20098884ae9071848e1951b8b34e5ec84a7241f2e7c5afd4b323dfd?&dpr=1.25&format=auto&auto=format&q=50&w=167);
 }
 
 .keno{
+    border-bottom: 5PX SOLID BLACK;
     background-image: url(
     https://mediumrare.imgix.net/102cf3d7c840018b939cd787bf013e080b996d80e604f3008f21dddf1f1aa201?&dpr=1.25&format=auto&auto=format&q=50&w=167
 
     );
 }
-.content{
-    background-color: #1A2C38;
-    height: 100vh;
+
+.roulette{
+    border-bottom: 5PX SOLID BLACK;
+    background-image: url(
+        https://mediumrare.imgix.net/86cd89b12ec34439c0d1a6e32b06c971efc86091e09ba466182abe173c3d3f7d?&dpr=1.25&format=auto&auto=format&q=50&w=167
+    );
 }
+
+.slide{
+    border-bottom: 5PX SOLID BLACK;
+    background-image: url(
+        https://mediumrare.imgix.net/08512fbdc9c4163e9fae5917c47ade43a7bfe8253de88d8d16296540eab0f0a1?&dpr=1.25&format=auto&auto=format&q=50&w=167
+    );
+}
+
+.wheel{
+    border-bottom: 5PX SOLID BLACK;
+    background-image: url(
+        https://mediumrare.imgix.net/e0a4131a16c28a1c1516958c93ec90c6f0f1bb00f41de87f72f6800c535b9c6f?&dpr=1.25&format=auto&auto=format&q=50&w=167
+    );
+}
+
+.scarab{
+    border-bottom: 5PX SOLID BLACK;
+    background-image: url(
+        https://mediumrare.imgix.net/7a2cc695cad10b097220f0c5c81858075c3ec4ee4235d8211cbbdbbd389c6d6c?&dpr=1.25&format=auto&auto=format&q=50&w=167
+    );
+}
+
+.baccart{
+    border-bottom: 5PX SOLID BLACK;
+    background-image: url(
+        https://mediumrare.imgix.net/64f71f2f8c1bde6a66c98ab399c846c8e9921f424559737d0a3879414b69b4b8?&dpr=1.25&format=auto&auto=format&q=50&w=167
+    );
+}
+
+.diamonds{
+    border-bottom: 5PX SOLID BLACK;
+    background-image: url(
+        https://mediumrare.imgix.net/59d1df22a2931a965fc241a436a398f460e71ea9d0214f66780a52b56655d392?&dpr=1.25&format=auto&auto=format&q=50&w=167
+
+    );
+}
+.content{
+    display: inline-flex;
+    background-color: #1A2C38;
+    height: 320px;
+    margin-left: 25px;
+    overflow-x: scroll;
+    
+    /* margin-right: 25px; */
+    width: 97%;
+    
+
+}
+.content::-webkit-scrollbar{
+    display: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .money{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-radius: 4px;
 
     background-color: #112330;
     padding: 5px;
+    padding-right: 0px;
     width: 150px;
     height: 35px;
+    gap: 10px;
+
 }
 
 .wallet{
@@ -117,7 +199,126 @@ border-radius:10px ;
     padding: 10px;
     padding-right: 12px;
     margin-left: 4px;
-
     background-color: blue;
     
+}
+
+H1{
+    color: WHITE;
+}
+
+.c{
+    height: 60px;
+    width: 180px;
+    background-color: #2d4454;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    border-radius: 7px;
+    color: antiquewhite;
+    font-size: larger;
+}
+
+.one{
+    display: inline-flex;
+    justify-content: left;
+    align-items:left;
+    height:250px;
+    width: 350px;
+    background-color: #213743;
+padding: 10px;
+margin: 10px;
+font-size: 50px;
+color: antiquewhite;
+cursor: pointer;
+border-radius:10px ;
+background-image: url(
+    https://cdn.sanity.io/images/tdrhge4k/production/593358452d12a346fa8b9692181330f87ffce0a1-1080x1080.png
+);
+
+
+}
+
+.two{
+    display: inline-flex;
+    justify-content: left;
+    align-items:left;
+    height:250px;
+    width: 350px;
+    background-color: #213743;
+padding: 10px;
+margin: 10px;
+font-size: 50px;
+color: antiquewhite;
+cursor: pointer;
+border-radius:10px ;
+background-image: url(
+    https://cdn.sanity.io/images/tdrhge4k/production/5fb8f7b8211dc695b4aebc6337d6ef3f0d7b6042-1080x1080.jpg
+);
+
+}
+
+.three{
+    display: inline-flex;
+    justify-content: left;
+    align-items:left;
+    height:250px;
+    width: 350px;
+    background-color: #213743;
+padding: 10px;
+margin: 10px;
+font-size: 50px;
+color: antiquewhite;
+cursor: pointer;
+border-radius:10px ;
+background-image: url(
+    https://cdn.sanity.io/images/tdrhge4k/production/593358452d12a346fa8b9692181330f87ffce0a1-1080x1080.png
+
+)
+}
+
+
+
+
+
+
+.page{
+    padding-top:100px ;
+    overflow-x: hidden; 
+}
+
+
+
+
+
+.START{
+    
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    border-radius: 40px;
+    border-color: white;
+    background-color: #0F212E;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.come{
+    width: 350px;
+    border-radius: 50px;
+    background-image: url(
+        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3408yguBLLyYCcnbczofJg6XCXkaS-tgA7g&s
+
+    );
+
 }
