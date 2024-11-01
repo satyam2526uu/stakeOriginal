@@ -354,7 +354,6 @@ background-image: url(
     list-style: none;
     padding-top: 50px;
     padding-left: 30px;
-    cursor: pointer;
 
 }
 
@@ -401,4 +400,8 @@ background-image: url(
 
 .casino:hover{
     background-color: greenyellow;
+}
+.sidebar-item{
+    cursor: pointer;
+
 }
