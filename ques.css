@@ -378,6 +378,7 @@ background-image: url(
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    cursor: pointer;
 
 }
 
@@ -389,6 +390,7 @@ background-image: url(
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .sports:hover{
