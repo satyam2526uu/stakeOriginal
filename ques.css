@@ -1,4 +1,4 @@
- * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -294,7 +294,7 @@ background-image: url(
 .page{
     padding-top:100px ;
     overflow-x: hidden; 
-    margin-left: 160px;
+    margin-left: 165px;
     padding-left: 40px;
 }
 
@@ -325,6 +325,7 @@ background-image: url(
 }
 .come{
     width: 350px;
+    
     border-radius: 50px;
     background-image: url(
         https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3408yguBLLyYCcnbczofJg6XCXkaS-tgA7g&s
@@ -340,6 +341,7 @@ background-image: url(
     position: fixed;
     z-index: 1000;
     top: 0;
+    
 
 
 
@@ -350,6 +352,9 @@ background-image: url(
     flex-direction: column;
     gap: 10px;
     list-style: none;
+    padding-top: 50px;
+    padding-left: 30px;
+    cursor: pointer;
 
 }
 
@@ -358,20 +363,40 @@ background-image: url(
     align-items: center;
     gap: 10px;
     height:60px ;
-
     justify-content: center;
+    border-bottom:3px solid black;
+
+
 
 }
 
 .casino{
-    height: 30px;
-    width: 50px;
-    background-color: pink;
+    height: 40px;
+    width: 70px;
+    background-color: #0F212E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 
 }
 
 .sports{
-    height: 30px;
-    width: 50px;
-    background-color: red;
+    height: 40px;
+    width: 70px;
+    background-color: #0F212E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.sports:hover{
+    background-color: orange;
+
+
+}
+
+.casino:hover{
+    background-color: greenyellow;
 }
