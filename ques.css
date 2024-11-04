@@ -8,6 +8,7 @@
 body{
     background-color: #1A2C38;
     color: #ffffff;
+    margin-right: 40px;
     
     
     
@@ -295,7 +296,8 @@ background-image: url(
     padding-top:100px ;
     overflow-x: hidden; 
     margin-left: 165px;
-    padding-left: 40px;
+    padding-left: 70px;
+
 }
 
 
@@ -324,7 +326,7 @@ background-image: url(
     font-size: 25px;
 }
 .come{
-    width: 350px;
+    width: 270px;
     
     border-radius: 50px;
     background-image: url(
@@ -378,7 +380,17 @@ background-image: url(
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
+    animation-name: satyam;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1000;
 
+}
+
+@keyframes satyam {
+    from { background-color: #0F212E;}
+    to { background-color: green;}
 }
 
 .sports{
@@ -390,6 +402,16 @@ background-image: url(
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
+    animation-name: shivam;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 10000;
+}
+
+@keyframes shivam {
+    from { background-color: #0F212E;}
+    to { background-color: orange;}
 }
 
 .sports:hover{
@@ -401,7 +423,10 @@ background-image: url(
 .casino:hover{
     background-color: greenyellow;
 }
+
 .sidebar-item{
     cursor: pointer;
+
+margin-top: 10px;
 
 }
